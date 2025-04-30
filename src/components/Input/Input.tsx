@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import './Input.css';
 
 interface InputProps {
@@ -10,13 +10,15 @@ interface InputProps {
 }
 
 export const Input: FC<InputProps> = ({ labelColor, required, labelText, placeholder, value }) => {
+    const [text, setText] = useState(value);
     return (
         <div className="input-container">
             <input
                 className='input'
                 type='text'
                 required={required}
-                value={value}
+                value={text}
+                onChange={(e) => setText(e.target.value)}
                 placeholder={placeholder}
             />
             <div className="input-label">
