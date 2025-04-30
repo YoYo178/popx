@@ -1,0 +1,35 @@
+.input-container {
+    position: relative;
+    height: 2.7rem;
+}
+
+.input {
+    width: calc(100% - 1.7rem);
+    height: calc(100% - 2rem);
+    text-decoration: none;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+
+    border-radius: 5px;
+    letter-spacing: 0.2px;
+
+    position: absolute;
+    border: 1px solid #cdcdcd;
+    background-color: #f7f8f9;
+}
+
+.input-label {
+    display: flex;
+    gap: 0.1rem;
+    background-color: #f7f8f9;
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    padding: 0 0.2rem;
+
+    font-size: 0.8rem;
+}
+
+.required-field {
+    color: red;
+}

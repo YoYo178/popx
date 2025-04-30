@@ -1,0 +1,11 @@
+.button {
+    text-decoration: none;
+    padding: 0.8rem;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+
+    border-radius: 5px;
+    letter-spacing: 0.2px;
+}
