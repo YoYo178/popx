@@ -1,0 +1,58 @@
+.profile-modal {
+    background-color: #f7f8f9;
+    color: #1d2226;
+
+    height: 100%;
+    width: 22%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-modal > span {
+    padding: 2.3rem 0 1rem 1rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.profile-border {
+    border: 1px dashed #d6d6d6;
+}
+
+.profile-section {
+    background-color: #f7f8f9;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem 0 1rem;
+    gap: 1.3rem;
+}
+
+.profile-description {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.profile-container {
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.6rem;
+}
+
+.profile-details-container {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.7rem 0 0 0;
+}
+
+.profile-details-container > strong {
+    font-weight: 500;
+}
