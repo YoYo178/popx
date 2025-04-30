@@ -3,7 +3,7 @@
     color: #1d2226;
 
     height: 100%;
-    width: 22%;
+    width: 21.5rem;
 
     display: flex;
     flex-direction: column;
@@ -55,4 +55,10 @@
 
 .profile-details-container > strong {
     font-weight: 500;
+}
+
+@media screen and (orientation: portrait) {
+    .profile-modal {
+        width: 100%;
+    }
 }

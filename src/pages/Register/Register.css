@@ -3,7 +3,7 @@
     color: #1d2226;
 
     height: 100%;
-    width: 22%;
+    width: 21.5rem;
 
     display: flex;
     flex-direction: column;
@@ -40,4 +40,10 @@
 
 .register-modal > a {
     margin: auto 1.2rem 2.3rem 1.2rem;
+}
+
+@media screen and (orientation: portrait) {
+    .register-modal {
+        width: 100%;
+    }
 }

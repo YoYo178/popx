@@ -3,7 +3,7 @@
     color: #1d2226;
 
     height: 100%;
-    width: 22%;
+    width: 21.5rem;
 
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     gap: 0.7rem;
 }
 
-.landing-modal > p {
+.landing-modal>p {
     font-weight: 500;
     margin-left: 1rem;
     font-size: 1.6rem;
@@ -26,7 +26,7 @@
     font-size: 1.05rem;
 }
 
-.description > p {
+.description>p {
     color: #74777b;
     font-weight: 400;
 }
@@ -37,4 +37,10 @@
     gap: 0.6rem;
 
     margin: 1rem 1rem 2.2rem 1rem;
+}
+
+@media screen and (orientation: portrait) {
+    .landing-modal {
+        width: 100%;
+    }
 }
