@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import './RadioButtonQuestion.css';
 
 interface RadioButtonQuestionProps {
@@ -6,7 +6,7 @@ interface RadioButtonQuestionProps {
     question: string;
     required?: boolean;
     options: string[];
-    checked?: boolean[];
+    defaultCheck?: number;
 }
 
 export const RadioButtonQuestion: FC<RadioButtonQuestionProps> = ({
@@ -14,8 +14,10 @@ export const RadioButtonQuestion: FC<RadioButtonQuestionProps> = ({
     question,
     required,
     options,
-    checked
+    defaultCheck
 }) => {
+    const [selectedIndex, setSelectedIndex] = useState<number | undefined>(defaultCheck);
+
     return (
         <div className="radio-button-question-container">
             <div className="radio-btn-question-label">
@@ -25,7 +27,7 @@ export const RadioButtonQuestion: FC<RadioButtonQuestionProps> = ({
             <div className="radio-buttons-container">
                 {options.map((option, idx) => (
                     <label key={idx} className="radio-label-button-pair">
-                        <input type="radio" name={name} value={option} checked={checked?.length ? checked[idx] : false} />
+                        <input type="radio" name={name} value={option} checked={selectedIndex === idx} onChange={() => setSelectedIndex(idx)} />
                         <span className="radio-btn" />
                         <span className="radio-option-label">{option}</span>
                     </label>
@@ -34,4 +36,3 @@ export const RadioButtonQuestion: FC<RadioButtonQuestionProps> = ({
         </div>
     );
 };
-    

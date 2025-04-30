@@ -18,7 +18,7 @@ export const Register = () => {
         <Input labelColor='#6c25ff' value='Marry Doe' labelText='Password' required />
         <Input labelColor='#6c25ff' value='Marry Doe' labelText='Company name' />
 
-        <RadioButtonQuestion name='agency-question' question="Are you an Agency?" options={['Yes', 'No']} required checked={[true, false]} />
+        <RadioButtonQuestion name='agency-question' question="Are you an Agency?" options={['Yes', 'No']} defaultCheck={0} required />
       </div>
 
       <Button bgColor="#6c25ff" redirectPath="/profile" textColor="white">Create Account</Button>
