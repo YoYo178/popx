@@ -1,15 +1,15 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { RootLayout } from './layouts/RootLayout/RootLayout'
+import { RootLayout } from './layouts/RootLayout/RootLayout';
 
-import { Landing } from './pages/Landing/Landing'
-import { Login } from './pages/Login/Login'
-import { Register } from './pages/Register/Register'
-import { Profile } from './pages/Profile/Profile'
+import { Landing } from './pages/Landing/Landing';
+import { Login } from './pages/Login/Login';
+import { Register } from './pages/Register/Register';
+import { Profile } from './pages/Profile/Profile';
 
 function App() {
   return (
-    <BrowserRouter basename="/popx">
+    <BrowserRouter basename='/popx'>
       <Routes>
         <Route element={<RootLayout />}>
           <Route index element={<Landing />}></Route>
@@ -19,7 +19,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
